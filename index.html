@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div id="wrap">
         <header>
-            <div id="header-logo">
-                <img src="./assets/image/header-log.jpg">
+            <div id="header-left">
+                <i class="material-icons main-icon">home</i>
+                <h1 class="site-title">Sample Page</h1>
+                <!-- <span class="sub-title">sub title sub title sub title</span> -->
             </div>
             <div id="header-menu">
                 <ul>
-                    <li>お知らせ</li>
-                    <li>住まいのコラム</li>
-                    <li>ワークショップ</li>
-                    <li><span class="phone-number">1234-567-8900</span></li>
-                    <li><button class="contact-button">お問い合わせ</button></li>
+                    <li><i class="material-icons">info</i>お知らせ</li>
+                    <li><i class="material-icons">work</i>住まいのコラム</li>
+                    <li><i class="material-icons">work</i>ワークショップ</li>
+                    <li><i class="material-icons phone">phone</i><span class="phone-number">1234-56-7890</span></li>
+                    <!-- <li><button class="contact-button">お問い合わせ</button></li> -->
                 </ul>
             </div>
         </header>
-        <div id="nav-drawer">
+        <!-- <div id="nav-drawer">
                 <input id="nav-input" type="checkbox" class="nav-unshown">
                 <label id="nav-open" for="nav-input"><span></span></label>
                 <label class="nav-unshown" id="nav-close" for="nav-input"></label>
                 <div id="nav-content">ここに中身を入れる</div>
-        </div>
+        </div> -->
         <nav>
             <ul>   
                 <li>TOP</li>
@@ -143,8 +146,12 @@
                     </td>
                 </tr>
             </table>
-        </div>
-
+        </section>
+        <section class="top-result">
+            <div id="top-pickup-property-title">
+                <span class="pickup-title-front">建築実例</span>
+            </div>
+        </section>
         <footer>footer</footer>
     </div>
 </body>
