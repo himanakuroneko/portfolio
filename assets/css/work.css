@@ -14,16 +14,12 @@ a {
     text-decoration: none
 }
 
-a:visited {
-    color: black;
-}
-
 .nav-link {
 	padding: 0.1em 0.3em;
 	position: relative;
 	display: inline-block;
 	transition: .3s;
-	color: #AB47BC;
+	color: black;
 }
 
 .nav-link::after {

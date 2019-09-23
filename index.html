@@ -4,155 +4,131 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <header>
-            <div id="header-left">
-                <i class="material-icons main-icon">home</i>
-                <h1 class="site-title">Sample Page</h1>
-                <!-- <span class="sub-title">sub title sub title sub title</span> -->
+    <header>
+        <div class="container">
+            <div id="header-top">
+                <i class="material-icons main-icon">control_camera</i>
+                <h1 class="site-title">himakuro's Portfolio</h1>
             </div>
-            <div id="header-menu">
+            <div id="header-sub">
                 <ul>
-                    <li><i class="material-icons">info</i>お知らせ</li>
-                    <li><i class="material-icons">work</i>住まいのコラム</li>
-                    <li><i class="material-icons">work</i>ワークショップ</li>
-                    <li><i class="material-icons phone">phone</i><span class="phone-number">1234-56-7890</span></li>
-                    <!-- <li><button class="contact-button">お問い合わせ</button></li> -->
+                    <li><a class="nav-link" href="#works"><i class="material-icons">computer</i>works</a></li>
+                    <li><a class="nav-link" href="#skills"><i class="material-icons">school</i>skills</a></li>
+                    <li><a class="nav-link" href="#profile"><i class="material-icons">account_circle</i>profile</a></li>
                 </ul>
             </div>
-        </header>
-        <!-- <div id="nav-drawer">
-                <input id="nav-input" type="checkbox" class="nav-unshown">
-                <label id="nav-open" for="nav-input"><span></span></label>
-                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-                <div id="nav-content">ここに中身を入れる</div>
-        </div> -->
-        <nav>
-            <ul>   
-                <li>TOP</li>
-                <li>物件を探す</li>
-                <li>選ばれる理由</li>
-                <li>家造り</li>
-                <li>建築実例</li>
-                <li>モデルハウス</li>
-            </ul>
-        </nav>
-        <section>
-            <div id="contents">
-                <div id="top-message">
-                    <p class="sub-message">Message message</p>
-                    <p class="main-message">Message message<br>Message message</p>
-                </div>
-                <div id="top-pickup">
-                    <table class="top-pickup-table">
-                        <th>PICK UP</th>
-                        <tr>
-                            <td><img src="#"></td>
-                            <td>Event<br>あいうえおかきくけこ</td>
-                        </tr>
-                        <tr>
-                            <td><img src="#"></td>
-                            <td>News<br>あいうえおかきくけこ</td>
-                        </tr>
-                        <tr>
-                            <td><img src="#"></td>
-                            <td>Media<br>あいうえおかきくけこ</td>
-                        </tr>
-                        <tr>
-                            <td><img src="#"></td>
-                            <td>News<br>あいうえおかきくけこ</td>
-                        </tr>
-                        <tr>
-                            <td><img src="#"></td>
-                            <td>Event<br>あいうえおかきくけこ</td>
-                        </tr>
-                    </table>
+        </div>
+    </header>
+    <section id="top-profile">
+        <img src="./assets/image/himakuro-plain.png">
+        <p>himakuro</p>
+    </section>
+    <section id="works">
+        <div class="container">
+            <h2>works</h2>
+            <div class="work-detail">
+                <ul>
+                    <li class="work-card">
+                        <img src="./assets/image/portfolio.png">
+                        <h3>ポートフォリオ</h3>
+                    </li>
+                    <li class="work-card">
+                        <img src="./assets/image/work2.png">
+                        <h3>個人ブログ</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>skills</h2>
+            <div class="skill-detail">
+                <ul>
+                    <li class="skill">
+                        <img src="./assets/image/html5.png">
+                        <p class="lang">HTML5</p>
+                        <p class="lang-star">★★★☆☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/css.png">
+                        <p class="lang">CSS</p>
+                        <p class="lang-star">★★☆☆☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/js.png">
+                        <p class="lang">Javascript</p>
+                        <p class="lang-star">★★☆☆☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/vue.png">
+                        <p class="lang">Vue</p>
+                        <p class="lang-star">★★★☆☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/nuxt.png">
+                        <p class="lang">Nuxt</p>
+                        <p class="lang-star">★★★☆☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/wp.png">
+                        <p class="lang">WordPress</p>
+                        <p class="lang-star">★★★★☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/php.png">
+                        <p class="lang">PHP</p>
+                        <p class="lang-star">★★★★☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/laravel.png">
+                        <p class="lang">Laravel</p>
+                        <p class="lang-star">★★★★☆</p>
+                    </li>
+                    <li class="skill">
+                        <img src="./assets/image/go.jpeg">
+                        <p class="lang">Go</p>
+                        <p class="lang-star">★★★★☆</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="profile">
+        <div class="container">
+            <h2>profile</h2>
+            <div class="profile-detail">
+                <img src="./assets/image/himakuro-doya.png">
+                <div class="profile-content">
+                    <h3>himakuro</h3>
+                    <p>新卒で某ソーシャルゲーム会社に入社</p>
+                    <p>5年後にウェブサービスを開発したくなり転職。</p><br>
+                    <p>今までの業務ではサーバー側のAPIの開発やテーブル設計などを担当。</p>
+                    <p>趣味ではブログやウェブサービスなどを開発中</p>
+                    <div class="profile-sns">
+                        <a href="https://twitter.com/himanakuroneko"><i class="fa twitter fa-twitter"></i></a>
+                        <a href="https://github.com/himanakuroneko"><i class="fa github fa-github"></i></a>
+                    </div>
                 </div>
             </div>
-            <div id="top-pickup-property">
-                <div id="top-pickup-property-title">
-                    <span class="pickup-title-front">おすすめ物件</span>
-                </div>
-                <table class="pickup-table">
-                    <tr>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                        <td>
-                            <img src="./assets/image/main-image.jpg">
-                            <span class="top-pickup-address">東京都○○○1丁目 ○○ハウス</span>
-                            <span class="top-pickup-place"> ○○線 ○○○○駅 徒歩☓分</span>
-                        </td>
-                    </tr>
-                </table>
-                <div class="top-other-property">
-                    <button class="btn-double-border">他の物件を見る</button>
-                </div>
-            </div>
-        </section>
-        <section class="top-member-ad">
-            <table class="member-ad-table">
-                <tr>
-                    <td>
-                        <h2>会員募集中！</h2>
-                        <p>全ての「非公開物件」の情報を<br>メルマガでお届け！</p></td>
-                    <td>
-                        <button class="btn-top-ad">会員登録（無料）はこちら</button>
-                    </td>
-                    <td>
-                        <div class="top-membership-login">
-                            <p>会員様はこちらよりログインしてください</p>
-                            <input class="top-membership-login-text" type="text" placeholder="ログインID"></input>
-                            <input class="top-membership-login-text" type="text" placeholder="パスワード"></input>
-                            <button class="btn-top-login">ログイン</button>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <section class="top-result">
-            <div id="top-pickup-property-title">
-                <span class="pickup-title-front">建築実例</span>
-            </div>
-        </section>
-        <footer>footer</footer>
-    </div>
+        </div>
+    </section>
+    <footer>
+        © 2019 himakuro's portfolio
+    </footer>
+    <script>
+        var profileImg = $('#top-profile').find('img');
+        $(profileImg).hover(function() {
+            profileImg.attr('src', './assets/image/himakuro-happy.png');
+        }, function() {
+            profileImg.attr('src', './assets/image/himakuro-plain.png');
+        });
+    </script>
 </body>
 </html>
