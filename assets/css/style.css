@@ -1,380 +1,240 @@
 
 body {
-    background-color: #EEEEEE;
+    margin: 0;
+    background-color: rgb(247, 241, 241);
     font-family: arial black;
 }
 
-#wrap {
-    background-color: #FFFFFF;
-    width:100%;
-    margin:0 auto;
-}
-    
-header {
-    display: block;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-#header-left {
-    height: 65px;
-    width: 40%;
-    float: left;
-    vertical-align: middle;
-}
-
-.material-icons {
-    display: inline-flex;
-    vertical-align: top;
-}
-
-.material-icons.main-icon {
-    font-size: 58px;
-    margin-left: 15px;
-    margin-top: 10px;
-}
-
-h1.site-title{
-    display: inline-block;
-    padding-right: 15px;
-}
-
-#header-menu {
-    height: 65px;
-    width: 55%;
-    float: right;
-    padding-right: 5%;
-    text-align: right;
+a:visited {
+    text-decoration: none;
 }
 
 ul {
-    overflow: hidden;
+    margin: 0;
+    padding-inline-start: 0px;
+}
+
+li {
     list-style: none;
+}
+
+.container {
+    width: 80%;
     margin: 0 auto;
 }
 
-#header-menu li {
+h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
     display: inline-block;
-    margin: auto;
-    padding: 14px 5px 5px 5px;
-    margin-top: 0em; /*行間の調整*/
-    margin-bottom: 0em; /*行間の調整*/
-}
-
-#nav-drawer {
-    position: relative;
-  }
-  
-  /*チェックボックス等は非表示に*/
-  .nav-unshown {
-    display:none;
-  }
-  
-  /*アイコンのスペース*/
-  #nav-open {
-    display: inline-block;
-    width: 30px;
-    height: 22px;
     vertical-align: middle;
-  }
-  
-  /*ハンバーガーアイコンをCSSだけで表現*/
-  #nav-open span, #nav-open span:before, #nav-open span:after {
-    position: absolute;
-    height: 3px;/*線の太さ*/
-    width: 25px;/*長さ*/
-    border-radius: 3px;
-    background: #555;
-    display: block;
-    content: '';
-    cursor: pointer;
-  }
-  #nav-open span:before {
-    bottom: -8px;
-  }
-  #nav-open span:after {
-    bottom: -16px;
-  }
-  
-  /*閉じる用の薄黒カバー*/
-  #nav-close {
-    display: none;/*はじめは隠しておく*/
-    position: fixed;
-    z-index: 99;
-    top: 0;/*全体に広がるように*/
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0;
-    transition: .3s ease-in-out;
-  }
-  
-  /*中身*/
-  #nav-content {
-    overflow: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;/*最前面に*/
-    width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-    max-width: 330px;/*最大幅（調整してください）*/
-    height: 100%;
-    background: #fff;/*背景色*/
-    transition: .3s ease-in-out;/*滑らかに表示*/
-    -webkit-transform: translateX(-105%);
-    transform: translateX(-105%);/*左に隠しておく*/
-  }
-  
-  /*チェックが入ったらもろもろ表示*/
-  #nav-input:checked ~ #nav-close {
-    display: block;/*カバーを表示*/
-    opacity: .5;
-  }
-  
-  #nav-input:checked ~ #nav-content {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);/*中身を表示（右へスライド）*/
-    box-shadow: 6px 0 25px rgba(0,0,0,.15);
-  }
-
-
-@media screen and (min-width:480px) {
-    #nav-open {
-      display:none;
-    }
-  }
-
-.material-icons.phone {
-    font-size: 24px;
-    margin-top: 7px;
 }
 
-.phone-number {
-    font-size: 24px;
-    font-style: bold;
-}
-
-.contact-button {
-    height: 40px;
-    width: 160px;
-    background-color: orange;
-    font-size: 22px;
-    margin:auto;
-}
-    
-footer {
-    border:dashed 1px #999;
-}
-    
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-nav ul {
-	overflow: hidden;
-	margin: 0 auto;
-	padding: 0 3%;
-	width: 94%;
-	max-width: 960px; 
-}
-
-nav li {
-    float: left;
-    width: calc(100%/6);
-    padding: 20px 0;
-}
-
-#contents {
-    margin:1px 0px 1px 0px;
-    background: url(../image/main-image2.jpg) no-repeat;
-    background-size: cover;
-    height: 650px;
-}
-
-#contents p {
-    margin-top: 0;
-    color: black;
-}
-
-#top-message {
-    float: left;
-    width: 70%;
-}
-
-.sub-message { 
-    position: relative;
-    font-size: 32px;
-    font-weight: 900;
-    padding: 6% 0 0 10%;
-}
-
-.main-message { 
-    font-size: 64px;
-    font-weight: 900;
-    text-decoration: underline;
-    padding: 0 0 0 10%;
-}
-
-#top-pickup {
-    float: right;
-    width: 25%;
-    margin: 8% 4% 0 0;
-    background-color: white;
-}
-
-.top-pickup-table th,td {
-    padding: 3px 0;
-}
-
-#top-pickup img {
-    float: left;
-    background: green;
-    height: 65px;
-    width: 100px;
-}
-
-#top-pickup-property {
-    width: 100%;
-}
-
-#top-pickup-property-title {
-    margin: 1% 0 0 0;
-    text-align: center;
-}
-
-.pickup-title-front {
-    position: relative;
-    color: rgb(147, 236, 181);
+h2 {
     font-size: 42px;
-    /* padding: 10px 0;
-    text-align: center;
-    margin: 1.5em 0; */
-    display: inline-block;
-    margin: 47px 0;
-    text-shadow: 0 0 2px white;
-  }
-
-.pickup-title-front:before {
-    content: "";
-    position: absolute;
-    background: #a9e1ff;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    top: 50%;
-    border: dashed 1px white;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    box-shadow: 0px 0px 0px 5px #a9e1ff;
-  }
-
-.pickup-table {
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-.pickup-table td {
-    padding: 10px;
-    height: 210px;
-    width: 280px;
-}
-
-.pickup-table img {
-    display: block;
-    height: 210px;
-    width: 280px;
-}
-
-.top-pickup-address {
-    padding-top: 15px;
-    font-family: arial;
-    font-size: 18px;
-    display: block;
-}
-
-.top-pickup-place {
-    font-family: arial;
-    font-size: 14px;
-    display: block;
-}
-
-.top-other-property {
     text-align: center;
 }
 
-.btn-double-border {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  color: #67c5ff;
-  border: double 4px #67c5ff;
-  border-radius: 3px;
-  transition: .4s;
-  font-size: 32px;
-}
-
-.btn-double-border:hover {
-  background: #fffbef;
-}
-
-.top-member-ad {
-    background-color: rgb(250, 223, 102);
-    width: 72%;
-    margin: 25px auto;
-}
-
-.top-member-ad h2 {
-    font-size: 36px;
-    margin: 10px 25px;
-    padding: 0;
-}
-
-.top-member-ad p {
-    font-size: 18px;
-    margin: 10px 25px;
-    padding: 0;
-}
-
-.member-ad-table td {
-    padding: 10px;
-}
-
-.btn-top-ad {
-  display: inline-block;
-  padding: 1em 1em;
-  background-color: rgb(250, 223, 102);
-  text-decoration: none;
-  border: solid 2px black;
-  border-radius: 3px;
-  transition: .4s;
-  font-size: 20px;
-}
-
-.btn-top-ad:hover {
-  background: #fffbef;
-}
-
-.top-membership-login {
-    margin: 0 25px;
-}
-
-.top-membership-login-text {
-    text-align: center;
-    border: 2px solid black;
-    padding: 1em 0.5em;
-    background-color: rgb(250, 223, 102);
-    width: 9em;
-    font-size: 1em;
-}
-
-.btn-top-login {
-    display: inline-block;
-    padding: 1em 0.5em;
-    background-color:black;
+header {
+    width: 100%;
+    background-color : rgb(27, 5, 107);
     color: white;
-    text-decoration: none;
-    transition: .4s;
-    width: 9em;
-    font-size: 1em;
-  }
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+#header-top {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#header-top .material-icons {
+    font-size: 60px;
+    vertical-align: middle;
+}
+
+#header-sub {
+    text-align: center;
+    font-size: 16px;
+}
+
+#header-sub li {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+}
+
+.nav-link {
+	/* padding: 0.1em 0.3em; */
+	position: relative;
+	display: inline-block;
+	transition: .3s;
+	/* color: #AB47BC; */
+}
+
+.nav-link::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 0;
+	height: 5px;
+	background-color: rgb(46, 255, 64);
+	transition: .3s;
+}
+
+#header-sub .material-icons {
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+#top-profile {
+    text-align: center;
+}
+
+#top-profile img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#top-profile p {
+    margin-top: 0px;
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+}
+
+#works {
+    text-align: center;
+}
+
+.work-detail{
+    justify-content: space-between;
+}
+
+.work-card {
+    background-color: white;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 0 20px 20px 0;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.work-card img {
+    width: 320px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#skills {
+    text-align :center;
+}
+
+.skill-detail {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 20px 20px 0;
+    padding: 40px 0;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.skill-detail ul {
+    width: 70%;
+    margin: auto;
+}
+.skill-detail li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.skill img {
+    width: 80px;
+}
+
+.lang-star {
+    margin-top: 3px;
+    color: rgb(247, 187, 77);
+}
+
+#profile {
+    text-align: center;
+    position: relative;
+    margin: 100px auto;
+}
+
+#profile h2 {
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.profile-detail img {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: -100px auto 0;
+}
+
+.profile-content {
+    background-color: white;
+    width: 50%;
+    border-radius: 15px;
+    margin: auto;
+    padding: 100px 0 30px 0;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.profile-content p {
+    margin: 0;
+}
+
+.profile-sns {
+    margin-top: 20px;
+}
+.profile-sns .fa {
+    padding: 10px;
+}
+
+.profile-sns .twitter {
+    font-size: 36px;
+    border-radius: 50%;
+    background-color: rgb(35, 165, 245);
+    padding: 7px;
+    margin-right: 10px;
+    color: white;
+}
+
+.twitter:hover {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.profile-sns .github {
+    font-size: 36px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 7px;
+    color: white;
+}
+
+.github:hover {
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color : rgb(27, 5, 107);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
