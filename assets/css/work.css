@@ -1,7 +1,14 @@
 
 body {
+    margin: 0;
     background-color: #EEEEEE;
     font-family: arial black;
+}
+
+
+p, ul {
+    margin: 0;
+    padding: 0;
 }
 
 #wrap {
@@ -12,6 +19,17 @@ body {
 
 a {
     text-decoration: none
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-content {
+    clear: left;
+    text-align: center;
 }
 
 .nav-link {
@@ -43,7 +61,7 @@ header {
 
 #header-left {
     height: 65px;
-    width: 40%;
+    width: 30%;
     float: left;
     vertical-align: middle;
 }
