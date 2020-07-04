@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: arial black;
+    background-color:#f4f8fa;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+header {
+    height: 80px;
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,0.6);
+}
+
+.header-content {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-menu-left {
+    display: flex;
+}
+
+.header-menu-left li {
+    padding: 10px 15px;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-menu-right {
+    display: flex;
+}
+
+.header-menu-right li {
+    padding: 10px 8px;
+}
+
+.search-box {
+    position: relative;
+    margin: auto 16px;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin: 0;
+    font-size: 17px;
+    background-color: #f4f8fa;
+    border: none;
+}
+
+.search-box button {
+    padding: 6px 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    background: none;
+}
+
+.search-box button:hover {
+    background: #dedede;
+}
+
+.notify-icon {
+    font-size: 18px;
+    margin: auto 16px;
+}
+
+.profile-icon img {
+    width: 45px;
+    border-radius: 50%;
+    margin: auto 16px;
+}
+
+.main-wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.main-content {
+    width: 80%;
+}
+
+.announce {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category {
+    background-color: white;
+    width: 24%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+
+.card-list {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    width: 24%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+    word-break: break-all;
+}
+
+.card .profile {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/*.card .profile-name {*/
+/*    vertical-align: center;*/
+/*}*/
+
+/*.card .description {*/
+/*    font-size: 14px;*/
+/*}*/
+
+footer {
+    clear: left;
+    width: 100%;
+    background-color: #1c2f90;
+    color: white;
+    height: 65px;
+}
+
+.footer-text {
+    text-align: center;
+    line-height: 65px;
+}
