@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/work3.css">
     <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,6 +17,8 @@
                     <li><span class="fa fa-home top-icon"></span>メニュー1</li>
                     <li><span class="fa fa-home top-icon"></span>メニュー2</li>
                     <li><span class="fa fa-home top-icon"></span>メニュー3</li>
+                    <li><span class="fa fa-home top-icon"></span>メニュー4</li>
+                    <li><span class="fa fa-home top-icon"></span>メニュー5</li>
                 </ul>
             </div>
             <div class="header-right">
@@ -49,6 +52,28 @@
             <div class="announce">
                 <div class="message">NEW XXXXXXXXXXXXXXXXX</div>
                 <div class="announce-link">もっと見る</div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-inner">
+                            <p>コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-inner">
+                            <p>コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-inner">
+                            <p>コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <div class="category-wrapper">
                 <ul class="category-list">
@@ -202,4 +227,17 @@
         <p class="footer-text">© himakuro , 2020 All Rights Reserved.</p>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+    });
+</script>
 </html>

@@ -133,6 +133,20 @@ input[type=text] {
     margin-bottom: 20px;
 }
 
+.swiper-container {
+    margin: 40px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-inner {
+    width: 90%;
+}
+
+
 .category-list {
     display: flex;
     flex-wrap: wrap;
