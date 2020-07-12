@@ -17,8 +17,6 @@
                     <li><span class="fa fa-home top-icon"></span>メニュー1</li>
                     <li><span class="fa fa-home top-icon"></span>メニュー2</li>
                     <li><span class="fa fa-home top-icon"></span>メニュー3</li>
-                    <li><span class="fa fa-home top-icon"></span>メニュー4</li>
-                    <li><span class="fa fa-home top-icon"></span>メニュー5</li>
                 </ul>
             </div>
             <div class="header-right">
@@ -57,16 +55,25 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-inner">
+                            <div class="profile-icon">
+                                <img src="./assets/image/himakuro-plain.png">
+                            </div>
                             <p>コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1コメント1</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-inner">
+                            <div class="profile-icon">
+                                <img src="./assets/image/himakuro-plain.png">
+                            </div>
                             <p>コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2コメント2</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-inner">
+                            <div class="profile-icon">
+                                <img src="./assets/image/himakuro-plain.png">
+                            </div>
                             <p>コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3コメント3</p>
                         </div>
                     </div>
@@ -75,16 +82,19 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+            <div class="chart">
+                <canvas id="sampleChart"></canvas>
+            </div>
             <div class="category-wrapper">
                 <ul class="category-list">
-                    <li class="category">カテゴリ1</li>
-                    <li class="category">カテゴリ2</li>
-                    <li class="category">カテゴリ3</li>
-                    <li class="category">カテゴリ4</li>
-                    <li class="category">カテゴリ5</li>
-                    <li class="category">カテゴリ6</li>
-                    <li class="category">カテゴリ7</li>
-                    <li class="category">カテゴリ8</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ1</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ2</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ3</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ4</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ5</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ6</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ7</li>
+                    <li class="category"><i class="fa fa-search category-icon"></i>カテゴリ8</li>
                 </ul>
             </div>
             <div class="card-list-wrapper">
@@ -227,6 +237,27 @@
         <p class="footer-text">© himakuro , 2020 All Rights Reserved.</p>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script>
+    let ctx = document.getElementById("sampleChart").getContext('2d');
+    ctx.canvas.height = 80;
+    let sampleChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['7月1日', '7月2日', '7月3日', '7月4日', '7月5日', '7月6日', '7月7日'],
+            datasets: [
+                {
+                    // fill: 'origin',
+                    label: 'Analytics',
+                    data: [1, 3 ,4, 8, 10, 2, 0],
+                    lineTension: 0,
+                    borderColor: "rgba(18, 177, 192, 1)",
+                    backgroundColor: "rgba(168, 229, 255, 0.5)"
+                },
+            ]
+        },
+    });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {

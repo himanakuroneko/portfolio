@@ -24,7 +24,7 @@ a {
 }
 
 header {
-    height: 80px;
+    height: 65px;
     width: 100%;
     font-size: 18px;
     background-color: white;
@@ -143,6 +143,7 @@ input[type=text] {
 }
 
 .swiper-inner {
+    display: flex;
     width: 90%;
 }
 
@@ -163,6 +164,9 @@ input[type=text] {
     margin: 10px 0px;
 }
 
+.category-icon {
+    margin-right: 5px;
+}
 .card-list {
     margin-bottom: 30px;
     display: flex;
