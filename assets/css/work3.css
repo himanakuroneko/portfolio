@@ -203,7 +203,16 @@ footer {
     width: 100%;
     background-color: #1c2f90;
     color: white;
-    height: 65px;
+}
+
+.footer-menu-wrapper {
+    display: flex;
+    padding: 30px 0 10px 0;
+}
+
+.footer-menu {
+    font-size: 14px;
+    padding: 0 20px;
 }
 
 .footer-text {
